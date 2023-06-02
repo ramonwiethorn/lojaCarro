@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+
+    <title>Projeto M10 - Ebac Motors</title>
+</head>
+<body>
+    <header>
+        <div class="container container-flex">
+            <h1>Loja de Carro</h1>
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="container">                    
+                <ul>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>                
+                    <li>
+                        <a href="#">Destaques</a>
+                    </li>
+                    <li>
+                        <a href="#">Promoções</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>           
+        </nav>
+    </header>
+    <div id="carrossel">
+        <img src="/Images_M11/slide1.png" alt="">
+        <img src="/Images_M11/slide2.png" alt="">
+        <img src="/Images_M11/slide3.png" alt="">
+    </div>
+    <section id="sobre-a-loja">
+            <div class="container container-flex">
+                <img src="/Images_M11/loja.jpg" alt="imagem da loja"/>
+                <div>
+                    <h2>Sobre a Loja</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quos nisi corrupti eligendi quisquam, dolores et placeat nostrum dolorem deleniti nemo odio nihil, explicabo animi aut numquam eaque corporis saepe.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minus quis praesentium. Optio consequuntur sed ab, architecto aspernatur eum tempore unde voluptatem magni, quis dolorem dolor neque eaque porro cumque.
+                    </p>
+                </div>                               
+            </div>
+    </section>
+    <section >
+        <div class="container">
+            <h2>Em Destaque</h2>
+            <ul class="container-flex">
+                <li>
+                    <img src="/Images_M11/carro-bmw.png" alt="carro bmw">
+                    <h3>Carro BMW 2022</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                    <strong>R$75.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="/Images_M11/fusca.png" alt="Carro Volswagen">
+                    <h3>Volkswagen Fusca 1972</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                    <strong>R$35.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="/Images_M11/moto-bmw.png" alt="moto bmw">
+                    <h3>Moto BMW 2025</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                    <strong>R$120.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>    
+        </div>
+</section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#carrossel').slick({
+                autoplay: true,
+            });
+        });
+
+        $('.menu-hamburger').click(function(){
+            $('nav').slideToggle();
+        })
+    </script>
+</body>
+</html>

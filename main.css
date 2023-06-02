@@ -1,0 +1,78 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'roboto', sans-serif;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    background-color: rgb(10, 10, 70);
+    color: #fff;
+    padding-top: 10px;
+    
+}
+
+header > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+html{
+    overflow: hidden;
+}
+nav {
+    background-color: rgb(70, 78, 132);
+    padding: 10px 0;
+    display: none;
+}
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+nav li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.menu-hamburger {
+    width: 32px;
+    cursor: pointer;
+}
+.menu-hamburger span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+html{
+    overflow-x: hidden;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 500px;
+    margin-right: 24px;
+}
+
+section{
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    margin-left: 24px;
+}
