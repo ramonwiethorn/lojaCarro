@@ -37,7 +37,7 @@ $('#telefone').mask('(00)00000-0000', {
         },
         invalidHandler: function(evento, validador){
             let camposIncorretos = validador.numberOfInvalids();
-            console.log(camposIncorretos)
+            
             if(camposIncorretos){
                 alert(`Existem ${camposIncorretos} campos incorretos.`)
             }
@@ -45,9 +45,12 @@ $('#telefone').mask('(00)00000-0000', {
     })
     $('.lista-veiculos button').click(function(){
         const destino = $('#contato');
+        const nomeVeiculo = $(this).parent().find('h3').text();
+
+        $('veiculo-interesse').val(nomeVeiculo);
 
         $('html').animate({
             scrolltop: destino.offset().top
-            },1000)
+        }, 1000)
     })
 })
