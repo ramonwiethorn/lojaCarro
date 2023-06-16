@@ -10,6 +10,13 @@ $('.menu-hamburger').click(function(){
 $('#telefone').mask('(00)00000-0000', {
     placeholder: '(__)_____-____'
 });
+$('#cpf').mask('000.000.000-00', {
+    placeholder: '___.___.___-__'
+});
+$('#cep').mask('00.000-000', {
+    placeholder: '__.___-___'
+});
+
     $('form').validate({
         rules: {
             nome:{
@@ -47,10 +54,10 @@ $('#telefone').mask('(00)00000-0000', {
         const destino = $('#contato');
         const nomeVeiculo = $(this).parent().find('h3').text();
 
-        $('veiculo-interesse').val(nomeVeiculo);
+        $('#veiculo-interesse').val(nomeVeiculo);
 
         $('html').animate({
-            scrolltop: destino.offset().top
+            scrollTop: destino.offset().top
         }, 1000)
     })
 })
